@@ -1,0 +1,44 @@
+name: autorizacion_imagen
+description: >
+  App para recolectar la autorización de uso de imagen de participantes en
+  videos o anuncios, con verificación facial y captura offline-first.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Backend / sincronización (Módulo 3 — offline-first)
+  firebase_core: ^3.6.0
+  cloud_firestore: ^5.4.4
+  http: ^1.2.2
+
+  # Cámara / selfie del firmante (Módulo 2 — verificación facial)
+  image_picker: ^1.1.2
+
+  # Conectividad para disparar la sincronización al recuperar internet
+  connectivity_plus: ^6.1.0
+
+  # Almacenamiento local (carpeta de documentos de la app)
+  path_provider: ^2.1.4
+
+  # Identificadores locales únicos por registro, antes de sincronizar
+  uuid: ^4.5.1
+
+  # Formateo de fechas en la UI
+  intl: ^0.19.0
+
+  cupertino_icons: ^1.0.8
+  firebase_auth: ^5.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
